@@ -3,7 +3,7 @@ fun main(){
 
 
     do {
-        println("Please enter the number of your selection")
+        println("\nPlease enter the number of your selection")
         println("1) Laptop")
         println("2) Computer")
         println("3) Monitor")
@@ -18,7 +18,9 @@ fun main(){
 
         println("You have selected: $userChoice")
 
-        if (userChoice == 6)
+        if (userChoice > 7)
+            println("You have selected an invalid entry, please try again")
+        else if (userChoice == 6)
             println("Speakers\n")
         else if (userChoice == 5)
             println("Desk\n")
